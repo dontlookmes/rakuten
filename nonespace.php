@@ -1,5 +1,5 @@
 <?php
-$ten_tep_tin = "allproduc.txt";
+$ten_tep_tin = "allproduct.txt";
 
 // Kiểm tra xem tệp tin tồn tại không
 if (file_exists($ten_tep_tin)) {
