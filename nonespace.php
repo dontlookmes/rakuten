@@ -1,5 +1,5 @@
 <?php
-$ten_tep_tin = "allproduct.txt";
+$ten_tep_tin = "allproduct3.txt";
 
 // Kiểm tra xem tệp tin tồn tại không
 if (file_exists($ten_tep_tin)) {
@@ -13,11 +13,16 @@ if (file_exists($ten_tep_tin)) {
 
         // Kiểm tra xem nội dung có tồn tại không
         if ($noidung !== false) {
+            // Loại bỏ khoảng trắng giữa dấu ><
             $noidung = preg_replace('/>\s*</', '><', $noidung);
 
-            $noidung = preg_replace('/\s*([{};:\.])\s*/', '$1', $noidung);
-            echo  strlen($noidung)-2392;
+            // Loại bỏ khoảng trắng trước hoặc sau dấu {} và ; và .
+            $noidung = preg_replace('/\s*([{};\.])\s*/', '$1', $noidung);
+
+            // Đặt con trỏ về đầu tệp tin để ghi lại nội dung
             fseek($tep_tin, 0);
+
+            // Ghi lại nội dung đã được xử lý vào tệp tin
             fwrite($tep_tin, $noidung);
 
             // Cắt bớt nội dung nếu tệp tin mới ngắn hơn tệp tin gốc
