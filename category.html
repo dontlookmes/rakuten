@@ -1,0 +1,194 @@
+<style>
+    .category-box{
+        width: 200px;
+        color: rgb(91, 91, 91);
+        background-color: rgb(238, 238, 238);
+        font-family: serif;
+        height: 1000px;
+        position: relative;
+    }
+    .menu-box{
+        position: fixed;
+    }
+    .category-menu{
+        width: 200px;
+        
+        background-color: rgb(241, 249, 255)
+    }
+    .header{
+        width: 200px;
+        height: 30px;
+        background-color: #2fa1ff;
+        color: white;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .category-search-box{
+        margin: auto;
+        margin-top: 10px;
+    }
+    .form-box form{
+        display: flex;
+    }
+    .form-box form input{
+        width: 75%;
+        margin-left: 4px;
+        outline: none;
+        margin-right: 2px;
+    }
+    .form-box form .btn-box{
+        width: 25%;
+    }
+    .form-box form .btn-box button{
+        background-color: #2fa1ff;
+        color: white;
+        border: none;
+    }
+    .product-menu{
+        position: relative;
+        display: flex;
+    }
+    .product-menu p{
+        width: 180px;
+        height: 30px;
+        line-height: 34px;
+        padding-left: 20px;
+        margin: 0px;
+
+    }
+    .product-menu:hover p{
+        cursor: default;
+        background-color: #e0f1ff;
+    }
+    .product-menu:hover .menu-item-box{
+        display: block;
+    }
+    .menu-item-box{
+        display: none;
+        width: 220px;
+        position: absolute;
+        left: 205px;
+        top: 0px;
+        background-color: rgb(241, 249, 255);
+        z-index: 9999;
+    }
+    .menu-item-box::before{
+        position: absolute;
+        display: block;
+        content: "";
+        width: 20px;
+        height: 100%;
+        background-color: rgba(218, 233, 244,0);
+        left: -10px;
+    }
+    .menu-item-box::after {
+        content: "";
+        position: absolute;
+        top: 6;
+        left: -8px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 8px 5px 0; 
+        border-color: transparent #2fa1ff transparent transparent;
+    }
+    .menu-item-box .menu-header{
+        background-color: #2fa1ff;
+        color: white;
+        padding-left: 10px;
+        height: 30px;
+        line-height: 34px;
+    }
+    .menu-item-box a{
+        display: block;
+        text-decoration: none;
+        color: gray;
+        font-size: 16px;
+        height: 30px;
+        line-height: 34px;
+        padding-left: 20px;
+    }
+    .menu-item-box a:hover{
+        background-color: #e0f1ff;
+    }
+    svg {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    fill: #2fa1ff; 
+    stroke: white;
+    stroke-width: 2;
+}
+
+</style>
+<div class="category-box">
+        <div class="menu-box">
+        
+            <div class="category-menu">
+            <div class="header">商品カテゴリ</div>
+            <div class="category-search-box">
+                <div class="form-box">
+                    <form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc">
+                        <input type="hidden" name="sv" value="6">
+                        <input type="hidden" name="sid" value="205470">
+                        <input type="hidden" name="su" value="eshoptakayama">
+                        <input type="hidden" name="sn" value="Ｅshopタカヤマ">
+                        <input type="hidden" name="f" value="A">
+                        <input type="text" name="sitem">
+                        <div class="btn-box">
+                            <button type="submit" class="search-button">
+                                検索
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="product-menu">
+                <p>タカヤマ</p>
+                <div class="menu-item-box">
+                    <div class="menu-header">
+                        タカヤマ
+                    </div>
+                    <a href="https://www.rakuten.co.jp/eshoptakayama/" class="menu-item">
+                        TOPへ
+                    </a>
+                    <a href="https://www.rakuten.co.jp/eshoptakayama/info.html" class="menu-item">
+                        会社概要
+                    </a>
+                    <a href="https://item.rakuten.co.jp/eshoptakayama/c/0000000119/" class="menu-item">
+                        全商品
+                    </a>
+                </div>
+            </div>
+            <div class="product-menu">
+                <p>物置</p>
+                <div class="menu-item-box">
+                    <div class="menu-header">
+                        物置
+                    </div>
+                    <a href="https://item.rakuten.co.jp/eshoptakayama/c/0000000105/" class="menu-item">
+                        間口100cm以下
+                    </a>
+                    <a href="https://item.rakuten.co.jp/eshoptakayama/c/0000000106/" class="menu-item">
+                        間口101cm〜
+                    </a>
+                    <a href="https://item.rakuten.co.jp/eshoptakayama/c/0000000107/" class="menu-item">
+                        棚板
+                    </a>
+                    <a href="https://item.rakuten.co.jp/eshoptakayama/c/0000000109/" class="menu-item">
+                        組立代込 間口100cm以下
+                    </a>
+                    <a href="https://item.rakuten.co.jp/eshoptakayama/c/0000000116/" class="menu-item">
+                        組立代込 間口101cm～
+                    </a>
+                    <a href="https://item.rakuten.co.jp/eshoptakayama/c/0000000001/" class="menu-item">
+                        その他
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+        ${SHOP_CALENDAR}
+    </div>
+</div>
