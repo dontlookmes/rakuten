@@ -47,9 +47,11 @@
     }
      .category-box .product-menu{
         position: relative;
-        display: flex;
+        justify-content: space-between;
     }
      .category-box .product-menu p{
+        display: flex;
+        justify-content: space-between;
         width: 180px;
         height: 30px;
         line-height: 34px;
@@ -57,12 +59,20 @@
         margin: 0px;
 
     }
+    .category-box .product-menu p span:nth-child(2){
+        margin-right: 10px;
+        transform: rotate(90deg);
+        transition: transform 0.3s ease;
+    }
      .category-box .product-menu:hover p{
         cursor: default;
         background-color: #e0f1ff;
     }
      .category-box .product-menu:hover .menu-item-box{
         display: block;
+    }
+    .category-box .product-menu:hover p span:nth-child(2){
+        transform: rotate(0deg);
     }
      .category-box .menu-item-box{
         display: none;
@@ -148,7 +158,7 @@
                 </div>
             </div>
             <div class="product-menu">
-                <p>タカヤマ</p>
+                <p><span>タカヤマ</span><span>➤</span></p>
                 <div class="menu-item-box">
                     <div class="menu-header">
                         タカヤマ
@@ -165,7 +175,7 @@
                 </div>
             </div>
             <div class="product-menu">
-                <p>物置</p>
+                <p><span>物置</span><span>➤</span></p>
                 <div class="menu-item-box">
                     <div class="menu-header">
                         物置
@@ -191,31 +201,6 @@
                 </div>
             </div>
     
-        </div>
-        <img src="point.jpg">
-        <div class="event-box">
-    
-                <a href="https://event.rakuten.co.jp/campaign/card/pointday/" target="_blank"> 
-                <IMG src="https://image.rakuten.co.jp/eshoptakayama/cabinet/banner/card5x_468x60a.gif" border="0"></a>
-               
-               <a href="https://event.rakuten.co.jp/campaign/point-up/wonderfulday/" target="_blank"> 
-               <img src="https://image.rakuten.co.jp/_osaka04/cabinet/kikaku/468x60_3x.gif" border="0"></a>
-               
-               <a href="https://event.rakuten.co.jp/campaign/point-up/everyday/point/" target="_blank"> 
-                <IMG src="https://image.rakuten.co.jp/eshoptakayama/cabinet/banner/rakuten_pointup.jpg" border="0"></a>
-               
-               <a href="https://event.rakuten.co.jp/campaign/sports/" target="_blank"> 
-                <IMG src="https://image.rakuten.co.jp/eshoptakayama/cabinet/banner/468x60-pc.gif" border="0"></a> 
-               
-               <a href="https://event.rakuten.co.jp/campaign/sports/" target="_blank"> 
-                <IMG src="https://image.rakuten.co.jp/eshoptakayama/cabinet/banner/468x60e-pc.gif" border="0"></a> 
-               
-               <a href="https://event.rakuten.co.jp/campaign/sports/" target="_blank"> 
-                <IMG src="https://image.rakuten.co.jp/eshoptakayama/cabinet/banner/468x60v-pc.gif" border="0"></a> 
-               
-               <a href="https://event.rakuten.co.jp/campaign/sports/" target="_blank"> 
-                <IMG src="https://image.rakuten.co.jp/eshoptakayama/cabinet/banner/468x60w-pc.gif" border="0"></a> 
-           
         </div>
         ${SHOP_CALENDAR}
     </div>
