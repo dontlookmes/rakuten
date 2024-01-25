@@ -1,0 +1,286 @@
+<style>
+    @keyframes truot {
+        from{
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+    .yuuryou-option{
+        width: 1000px;
+        height: auto;
+        background-color: rgba(47, 161, 255,0.9);
+        padding-left: 20px;
+        padding: 40px;
+        /* background: url() center center no-repeat; */
+    }
+    .option-title{
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        color: white;
+        padding: 20px;
+        animation: truot 0.6s ease-in-out;
+
+    }
+    .menu-box{
+        width: fit-content;
+        margin: 20px;
+    }
+    .yuuryou-option input {
+        display: none;
+    }
+    label{
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        position: relative;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        font-family: 'Shippori Mincho B1', serif;
+        width: fit-content;
+        height: fit-content;
+        border: solid 2px white;
+        padding: 4px;
+        transition: transform 0.2s ease;
+        animation: truot 0.6s ease-in-out;
+    }
+    label:hover{
+        transform: translateX(20px);
+    }
+    .icon{
+        padding: 4px;
+    }
+    .title{
+        line-height: 28px;
+        height: fit-content;
+        padding:0px 8px;
+        border-right: solid 1px rgb(222, 220, 220);
+
+    }
+    .title-cap{
+        width: 720px;
+        margin-left: 20px;
+    }
+    .item-box{
+        background-color: white;
+        border-radius: 10px;
+        width: 0%;
+        margin-top: 10px;
+        margin-left: 40px;
+        height: 0%;
+        overflow: hidden;
+        transition: all 0.2s ease-in;
+    }
+    .item-box a{
+        margin: 20px 20px 20px 40px;
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 5px 10px;
+        border-radius: 10px;
+        white-space: nowrap;
+        width: fit-content;
+        background-color: rgb(236, 236, 236);
+    }
+    .item-box a:hover{
+        color: #008cff;
+    }
+    .caption{
+        font-size: 15px;
+        color: gray;
+    }
+    .a{
+        color: aqua;
+    }
+    .icon{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 20px;
+        height: 20px;
+        margin: auto;
+        transition: all 0.2s ease-in;
+    }
+    .icon div{
+        margin-left: 1px;
+        height: 1.5px;
+        width: 10px;
+        background-color: white;
+    }
+    .icon div:first-child{
+        margin-top: 3px;
+        transform: rotate(35deg);
+    }
+    .icon div:last-child{
+        transform: rotate(-35deg);
+        margin-bottom: 5.5px;
+    }
+    input[type="checkbox"]:checked ~ label{
+        transform: translateX(20px);
+    }
+    input[type="checkbox"]:checked ~ label .icon{
+        transform: rotate(90deg);
+    }
+    input[type="checkbox"]:checked ~ .item-box{
+        height: fit-content;
+        width: 100%;
+    }
+</style>
+<div class="yuuryou-option">
+    <div class="option-title">
+        ※有料のオプションをご注文になる場合は、必ず【組立代込】の物置・収納庫とご一緒にご注文ください。有料のオプションのみのご注文はお受け出来ません。<br>
+        ※各文字をクリックまたはタッチしていただくと商品ページへ飛びます。
+    </div>
+    <div class="menu-box">
+        <input type="checkbox" id="block">
+        <label for="block">
+            <div class="title">コンクリート基礎ブロック、モルタル調整</div>
+            <div class="icon"><div></div><div></div></div>
+        </label>
+        <div class="item-box">
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/cb/">
+                ①コンクリート基礎ブロック（半ブロック）1個につき個数1 税込150円
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/mo/">
+                ②モルタル調整（傾斜調整）1台につき個数1 税込3,000円
+            </a>
+        </div>
+    </div>
+    <div class="menu-box">
+        <input type="checkbox" id="tentou">
+        <label for="tentou">
+            <div class="title">転倒防止工事(アンカー工事)</div>
+            <div class="icon"><div></div><div></div></div>
+        </label>
+        <div class="item-box">
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/ak/">
+                ①『下地がコンクリートブロックの場合、1ヶ所につき個数1 税込1,100円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/ak-a/">
+                ②『下地がアスファルトの場合、1ヶ所につき個数1 税込3,850円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/sak/">
+                ③『下地が土、芝生の場合、1ヶ所につき個数1 税込2,750円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/zando/">
+                ④残土処分費
+                <div class="caption">
+                    （転倒防止工事(アンカー工事)の下地がアスファルトや土、<br>
+                    芝生で工事により発生した土の処分を施工業者に任される場合にご注文ください。）<br>
+                    転倒防止工事(アンカー工事)1ヶ所につき個数1 税込1,250円<br>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="menu-box">
+        <input type="checkbox" id="ageryouA">
+        <label for="ageryouA">
+            <div class="title">荷上げ料A
+                <div class="title-cap">
+                    ※施工業者が設置場所(配達先ご住所の1階平場)に
+                    【組立代込】の商品を搬入するのに
+                    階段を上る必要がある場合はご注文ください。<br>
+                    ※1段～6段まではご注文の必要はありません。
+                </div>
+            </div>
+            <div class="icon"><div></div><div></div></div>
+        </label>
+        <div class="item-box">
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-025-1/">
+                ①『7段～10段まで、1台につき個数1 税込2,400円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-025-2/">
+                ②『11段～20段まで、1台につき個数1 税込4,200円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-025-3/">
+                ③『21段～30段まで、1台につき個数1 税込6,000円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-025-4/">
+                ④『31段～40段まで、1台につき個数1 税込7,800円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-025-5/">
+                ⑤『41段～50段まで、1台につき個数1 税込9,600円』
+            </a>
+        </div>
+    </div>
+    <div class="menu-box">
+        <input type="checkbox" id="ageryouB">
+        <label for="ageryouB">
+            <div class="title">荷上げ料B
+                <div class="title-cap">
+                    ※施工業者が設置場所(配達先ご住所の1階平場)に
+                    【組立代込】の商品を搬入するのに
+                    階段を上る必要がある場合はご注文ください。<br>
+                    ※1段～6段まではご注文の必要はありません。
+                </div>
+            </div>
+            <div class="icon"><div></div><div></div></div>
+        </label>
+        <div class="item-box">
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-05-1/">
+                ①『7段～10段まで、1台につき個数1 税込3,600円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-05-2/">
+                ②『11段～20段まで、1台につき個数1 税込6,000円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-05-3/">
+                ③『21段～30段まで、1台につき個数1 税込8,400円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-05-4/">
+                ④『31段～40段まで、1台につき個数1 税込10,800円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-05-5/">
+                ⑤『41段～50段まで、1台につき個数1 税込13,200円』
+            </a>
+        </div>
+    </div>
+    <div class="menu-box">
+        <input type="checkbox" id="kaitai">
+        <label for="kaitai">
+            <div class="title">ご不要になった物置・収納庫の解体</div>
+            <div class="icon"><div></div><div></div></div>
+        </label>
+        <div class="item-box">
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/kai025/">
+                ①『『0.25坪未満、1台につき個数1 税込10,650円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/kai05/">
+                ②『0.25～0.5坪未満、1台につき個数1 税込12,850円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/kai1/">
+                ③『0.5～1.0坪未満、1台につき個数1 税込14,000円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/kai2/">
+                ④『1.0～2.0坪未満、1台につき個数1 税込19,400円』
+            </a>
+        </div>
+    </div>
+    <div class="menu-box">
+        <input type="checkbox" id="hikitori">
+        <label for="hikitori">
+            <div class="title">ご不要になった物置・収納庫の引取</div>
+            <div class="icon"><div></div><div></div></div>
+        </label>
+        <div class="item-box">
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/hiki025/">
+                ①『0.25坪未満、1台につき個数1 税込3,000円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/hiki05/">
+                ②『0.25～0.5坪未満、1台につき個数1 税込5,000円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/hiki1/">
+                ③『0.5～1.0坪未満、1台につき個数1 税込7,000円』
+            </a>
+            <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/hiki2/">
+                ④『1.0～2.0坪未満、1台につき個数1 税込10,000円』
+            </a>
+        </div>
+    </div>
+
+</div>
+  
+
