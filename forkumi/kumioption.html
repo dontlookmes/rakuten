@@ -10,29 +10,33 @@
         }
     }
     .yuuryou-option{
-        width: 1000px;
-        height: auto;
-        background-color: rgba(47, 161, 255,0.9);
-        padding-left: 20px;
-        padding: 40px;
-        /* background: url() center center no-repeat; */
+        border-radius: 10px;
+        margin: auto;
+        width: 500px;
+        height: fit-content;
+        background-color: #37a4fe;
+        padding: 10px;
     }
-    .option-title{
+    .yuuryou-option .option-title{
         background-color: rgba(255, 255, 255, 0.2);
         border-radius: 10px;
         color: white;
-        padding: 20px;
+        padding: 10px;
         animation: truot 0.6s ease-in-out;
 
     }
-    .menu-box{
+    .breadcrumbs_list{
+        color:  #37a4fe;
+        user-select: none;
+    }
+    .yuuryou-option .menu-box{
         width: fit-content;
-        margin: 20px;
+        margin: 10px 0px;
     }
     .yuuryou-option input {
         display: none;
     }
-    label{
+    .yuuryou-option label{
         background-color: rgba(255, 255, 255, 0.2);
         border-radius: 10px;
         position: relative;
@@ -47,55 +51,54 @@
         transition: transform 0.2s ease;
         animation: truot 0.6s ease-in-out;
     }
-    label:hover{
-        transform: translateX(20px);
+    .yuuryou-option label:hover{
+        transform: translateX(10px);
     }
-    .icon{
+    .yuuryou-option .icon{
         padding: 4px;
     }
-    .title{
+    .yuuryou-option .title{
         line-height: 28px;
         height: fit-content;
         padding:0px 8px;
         border-right: solid 1px rgb(222, 220, 220);
 
     }
-    .title-cap{
-        width: 720px;
-        margin-left: 20px;
+    .yuuryou-option .title-cap{
+        width: 410px;
+        margin-left: 10px;
     }
-    .item-box{
+    .yuuryou-option .item-box{
         background-color: white;
         border-radius: 10px;
         width: 0%;
         margin-top: 10px;
-        margin-left: 40px;
-        height: 0%;
+        margin-left: 10px;
+        height: 0px;
         overflow: hidden;
         transition: all 0.2s ease-in;
     }
-    .item-box a{
-        margin: 20px 20px 20px 40px;
+    .yuuryou-option .item-box a{
+        margin: 10px 10px 10px 20px;
         text-decoration: none;
         color: black;
         display: block;
-        padding: 5px 10px;
+        padding: 5px;
         border-radius: 10px;
-        white-space: nowrap;
-        width: fit-content;
+        width: 440px;
         background-color: rgb(236, 236, 236);
     }
-    .item-box a:hover{
+    .yuuryou-option .item-box a:hover{
         color: #008cff;
     }
-    .caption{
+    .yuuryou-option .caption{
         font-size: 15px;
         color: gray;
     }
-    .a{
+    .yuuryou-option .a{
         color: aqua;
     }
-    .icon{
+    .yuuryou-option .icon{
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -105,29 +108,29 @@
         margin: auto;
         transition: all 0.2s ease-in;
     }
-    .icon div{
+    .yuuryou-option .icon div{
         margin-left: 1px;
         height: 1.5px;
         width: 10px;
         background-color: white;
     }
-    .icon div:first-child{
+    .yuuryou-option .icon div:first-child{
         margin-top: 3px;
         transform: rotate(35deg);
     }
-    .icon div:last-child{
+    .yuuryou-option .icon div:last-child{
         transform: rotate(-35deg);
         margin-bottom: 5.5px;
     }
-    input[type="checkbox"]:checked ~ label{
-        transform: translateX(20px);
+    .yuuryou-option input[type="checkbox"]:checked ~ label{
+        transform: translateX(10px);
     }
-    input[type="checkbox"]:checked ~ label .icon{
+    .yuuryou-option input[type="checkbox"]:checked ~ label .icon{
         transform: rotate(90deg);
     }
-    input[type="checkbox"]:checked ~ .item-box{
+    .yuuryou-option input[type="checkbox"]:checked ~ .item-box{
         height: fit-content;
-        width: 100%;
+        width: 480px;
     }
 </style>
 <div class="yuuryou-option">
@@ -143,10 +146,10 @@
         </label>
         <div class="item-box">
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/cb/">
-                ①コンクリート基礎ブロック（半ブロック）1個につき個数1 税込150円
+                1・コンクリート基礎ブロック（半ブロック）1個につき個数1 税込150円
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/mo/">
-                ②モルタル調整（傾斜調整）1台につき個数1 税込3,000円
+                2・モルタル調整（傾斜調整）1台につき個数1 税込3,000円
             </a>
         </div>
     </div>
@@ -158,20 +161,20 @@
         </label>
         <div class="item-box">
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/ak/">
-                ①『下地がコンクリートブロックの場合、1ヶ所につき個数1 税込1,100円』
+                1・『下地がコンクリートブロックの場合、1ヶ所につき個数1 税込1,100円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/ak-a/">
-                ②『下地がアスファルトの場合、1ヶ所につき個数1 税込3,850円』
+                2・『下地がアスファルトの場合、1ヶ所につき個数1 税込3,850円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/sak/">
-                ③『下地が土、芝生の場合、1ヶ所につき個数1 税込2,750円』
+                3・『下地が土、芝生の場合、1ヶ所につき個数1 税込2,750円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/zando/">
-                ④残土処分費
+                4・残土処分費
                 <div class="caption">
-                    （転倒防止工事(アンカー工事)の下地がアスファルトや土、<br>
-                    芝生で工事により発生した土の処分を施工業者に任される場合にご注文ください。）<br>
-                    転倒防止工事(アンカー工事)1ヶ所につき個数1 税込1,250円<br>
+                    （転倒防止工事(アンカー工事)の下地がアスファルトや土、
+                    芝生で工事により発生した土の処分を施工業者に任される場合にご注文ください。）
+                    転倒防止工事(アンカー工事)1ヶ所につき個数1 税込1,250円
                 </div>
             </a>
         </div>
@@ -191,19 +194,19 @@
         </label>
         <div class="item-box">
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-025-1/">
-                ①『7段～10段まで、1台につき個数1 税込2,400円』
+                1・『7段～10段まで、1台につき個数1 税込2,400円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-025-2/">
-                ②『11段～20段まで、1台につき個数1 税込4,200円』
+                2・『11段～20段まで、1台につき個数1 税込4,200円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-025-3/">
-                ③『21段～30段まで、1台につき個数1 税込6,000円』
+                3・『21段～30段まで、1台につき個数1 税込6,000円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-025-4/">
-                ④『31段～40段まで、1台につき個数1 税込7,800円』
+                4・『31段～40段まで、1台につき個数1 税込7,800円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-025-5/">
-                ⑤『41段～50段まで、1台につき個数1 税込9,600円』
+                5・『41段～50段まで、1台につき個数1 税込9,600円』
             </a>
         </div>
     </div>
@@ -222,19 +225,19 @@
         </label>
         <div class="item-box">
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-05-1/">
-                ①『7段～10段まで、1台につき個数1 税込3,600円』
+                1・『7段～10段まで、1台につき個数1 税込3,600円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-05-2/">
-                ②『11段～20段まで、1台につき個数1 税込6,000円』
+                2・『11段～20段まで、1台につき個数1 税込6,000円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-05-3/">
-                ③『21段～30段まで、1台につき個数1 税込8,400円』
+                3・『21段～30段まで、1台につき個数1 税込8,400円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-05-4/">
-                ④『31段～40段まで、1台につき個数1 税込10,800円』
+                4・『31段～40段まで、1台につき個数1 税込10,800円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/niage-05-5/">
-                ⑤『41段～50段まで、1台につき個数1 税込13,200円』
+                5・『41段～50段まで、1台につき個数1 税込13,200円』
             </a>
         </div>
     </div>
@@ -246,16 +249,16 @@
         </label>
         <div class="item-box">
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/kai025/">
-                ①『『0.25坪未満、1台につき個数1 税込10,650円』
+                1・『『0.25坪未満、1台につき個数1 税込10,650円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/kai05/">
-                ②『0.25～0.5坪未満、1台につき個数1 税込12,850円』
+                2・『0.25～0.5坪未満、1台につき個数1 税込12,850円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/kai1/">
-                ③『0.5～1.0坪未満、1台につき個数1 税込14,000円』
+                3・『0.5～1.0坪未満、1台につき個数1 税込14,000円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/kai2/">
-                ④『1.0～2.0坪未満、1台につき個数1 税込19,400円』
+                4・『1.0～2.0坪未満、1台につき個数1 税込19,400円』
             </a>
         </div>
     </div>
@@ -267,20 +270,19 @@
         </label>
         <div class="item-box">
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/hiki025/">
-                ①『0.25坪未満、1台につき個数1 税込3,000円』
+                1・『0.25坪未満、1台につき個数1 税込3,000円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/hiki05/">
-                ②『0.25～0.5坪未満、1台につき個数1 税込5,000円』
+                2・『0.25～0.5坪未満、1台につき個数1 税込5,000円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/hiki1/">
-                ③『0.5～1.0坪未満、1台につき個数1 税込7,000円』
+                3・『0.5～1.0坪未満、1台につき個数1 税込7,000円』
             </a>
             <a target="_blank" href="https://item.rakuten.co.jp/eshoptakayama/hiki2/">
-                ④『1.0～2.0坪未満、1台につき個数1 税込10,000円』
+                4・『1.0～2.0坪未満、1台につき個数1 税込10,000円』
             </a>
         </div>
     </div>
-
 </div>
   
 
